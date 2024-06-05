@@ -34,6 +34,64 @@ export default function Page() {
         {`Ans: I would love to learn next.js more and have more knowledge on it so that I can become a key resource who can help users with their questions and issues.
 I’m very interested in learning new things and overcoming hurdles.`}
       </p>
+      <p className="mb-4">
+        {`3. Describe how you solved a challenge or technical issue that you faced in a previous role (preferably in a previous support role). How did you determine that your solution was successful? `}
+      </p>
+      <p className="mb-4">
+        {`Ans: We had a user reach out to us with a problem stating that he was not able to get a link generated so that he can share it to the customer. I tried to replicate the issue on my end with the network tab open then I took the trace id and fetched the logs for it, I found out that customer address was missing which caused the link to not be generated.
+I updated the user on the same and also created a jira for our engineering team to make sure they make the field mandatory so the user doesn’t forget to add that.`}
+      </p>
+      <p className="mb-4">
+        {`4. When would you choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?`}
+      </p>
+      <p className="mb-4">
+        {`Ans: 
+Use Edge Functions for lightweight tasks that benefit from lower latency.
+Use Serverless Functions for dynamic server-side logic or backend processing without managing servers.
+Use Edge Middleware for customising request/response handling or implementing complex transformations closer to the user.`}
+      </p>
+       <p className="mb-4">
+        {` 5. Imagine a customer writes in requesting help with a build issue on a framework or technology that you've not seen before. How would you begin troubleshooting this and what questions would you ask the customer to understand the situation better?`}
+      </p>
+       <p className="mb-4">
+        {`Ans: I would ask the customer to share the framework details that he is using and I would ask my teammates if they have worked on any such issues. If not I would search if we have any documentation on it. If I don't get any lead on it then I would reach out to our engineering team to know more or schedule a meeting with the customer and engineering team to go over the issue.`}
+      </p>
+      <p className="mb-4">
+        {`6. The customer from question 5 replies to your response with the below: “I’m so frustrated. I’ve been trying to make this work for hours and I just can’t figure it out. It must be a platform issue so just fix it for me instead of asking me questions.” Please write a follow-up reply to the customer. `}
+      </p>
+       <p className="mb-4">
+        {`Ans: - “Sorry for your inconvenience, I will have this escalated and schedule a meeting right away with you and our engineering team who are well versed with the issue. They would help you on this”.`}
+      </p>
+      <p className="mb-4">
+        {`7. A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog path to https://example.com?" Please write a reply to the customer. Feel free to add any information about your decision making process after the reply. `}
+      </p>
+      <p className="mb-4">
+        {`Ans: - 
+I would refer to the articles added and try to see if I can find the right one.
+Then I would share the link for the customer to go over it and get back to us if they have any questions.`}
+      </p>
+      <p className="mb-4">
+        {`8. A customer is creating a site and would like their project not to be indexed by search engines. Please write a reply to the customer. Feel free to add any information about your decision making process after the reply.`}
+      </p>
+       <p className="mb-4">
+        {`Ans: - I would refer to the articles created on this and see if there is anything the customer has to do to make sure that it is not indexed by search engines. If that is possible then I would give him the steps for the same if not I would say that we don't have that functionality and raise an enhancement request to our product team.`}
+      </p>
+      <p className="mb-4">
+        {`9. What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, short-term and long-term? `}
+      </p>
+      <p className="mb-4">
+        {`Ans: - I would think they would face deployment problems. 
+Short-term – Sending out mass communication for the users on the articles which helps with deployment problems.
+Long term – To overcome these problems we can set up a self assist portal so that the users can go there and select which error they are getting and see what is the solution for it.`}
+      </p>
+      <p className="mb-4">
+        {`10. How could we improve or alter this familiarisation exercise?`}
+      </p>
+       <p className="mb-4">
+        {`Ans : - 1.Creating articles from a user perspective, keeping in mind the issues that they might come across. Create some multimedia content such as video tutorials, interactive quizzes, or visual guides to cater to diverse learning styles and enhance engagement.
+Implementing a feedback mechanism to gather input from customers about their experience with the exercise.
+`}
+      </p>
       <div className="my-8">
         <BlogPosts />
       </div>
